@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/galaxy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sun img{
+    width: 130px;
+    height: 130px;
+}
+
+.mercury{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit1 1.5s linear infinite;
+}
+.mercury img{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes orbit1{
+    from{transform:rotate(0deg)translateX(80px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(80px)rotate(-360deg);}
+}
+
+.mercury-circle, .venus-circle, .earth-circle, .mars-circle, .jupiter-circle, .saturn-circle, .neptun-circle, .moon-circle{
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mercury-circle{
+    height: 160px;
+    width: 160px;
+}
+
+.venus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit2 3.5s linear infinite;
+}
+.venus img{
+    width: 45px;
+    height: 45px;
+}
+
+@keyframes orbit2{
+    from{transform:rotate(0deg)translateX(120px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(120px)rotate(-360deg);}
+}
+
+.venus-circle{
+    height: 235px;
+    width: 235px;
+}
+
+.earth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit3 5s linear infinite;
+}
+.earth img{
+    width: 55px;
+    height: 55px;
+}
+
+@keyframes orbit3{
+    from{transform:rotate(0deg)translateX(170px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(170px)rotate(-360deg);}
+}
+
+.earth-circle{
+    height: 350px;
+    width: 350px;
+}
+
+.mars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit4 7.5s linear infinite;
+}
+.mars img{
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes orbit4{
+    from{transform:rotate(0deg)translateX(220px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(220px)rotate(-360deg);}
+}
+
+.mars-circle{
+    height: 440px;
+    width: 440px;
+}
+
+.jupiter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit5 26s linear infinite;
+}
+.jupiter img{
+    width: 90px;
+    height: 90px;
+}
+
+@keyframes orbit5{
+    from{transform:rotate(0deg)translateX(285px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(285px)rotate(-360deg);}
+}
+
+.jupiter-circle{
+    height: 560px;
+    width: 560px;
+}
+
+.saturn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation:orbit6 47.5s linear infinite;
+}
+.saturn img{
+    width: 100px;
+    height: 85px;
+}
+
+@keyframes orbit6{
+    from{transform:rotate(0deg)translateX(345px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(345px)rotate(-360deg);}
+}
+
+.saturn-circle{
+    height: 700px;
+    width: 700px;
+}
